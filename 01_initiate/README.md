@@ -2,6 +2,10 @@
 
 This page contains the collaborative working document for the **Product Specification description**. For more information, see the [S-97 - IHO Guidelines for Creating S-100 Product Specifications](https://registry.iho.int/guidance/list.do).
 
+#### Product Specification Description Sub-Group
+
++ Britt Lonneville
+
 ---
 
 #### Product Specification number
