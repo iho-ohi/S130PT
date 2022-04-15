@@ -83,7 +83,7 @@ The 3rd Edition of S-23 “Limits of the Oceans and Seas” is not suitable for 
 
 Interoperability with S-101ENC.
 
-Interoperability with feature Sea Area/Named Water Area of S-101ENC
+Interoperability with feature Sea Area/Named Water Area of S-101ENC.
 
 ...
 
