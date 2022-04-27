@@ -31,10 +31,9 @@ The product specification for Polygonal demarcations of global sea areas
 
 #### Abstract
 
-This document describes an S-100 compliant product specification for Polygonal demarcations of global sea areas (PDGSA). The purpose is to support the provision of digital coordinates for limits of oceans and seas to meet requirements of contemporary geographic information systems. The S-130 datasets must designate global geographic sea areas by a system of unique numerical identifiers only.
+This document describes a Product Specification for the polygonal demarcation of global sea areas (PDGSA). It is a vector product specification that is primarily intended for encoding the extent of global sea areas using a system of unique numerical identifiers only. In this way, an authoritative dataset for limits of oceans and seas can be developed for use in contemporary geographic information and navigation systems. Its use is therefore not limited to navigational purposes only, but should also allow easy geospatial analysis by a broader audience. This Product Specification complies with the IHO S-100 Universal Hydrographic Data Model.
 
-Comment:Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.
-
+*Comment (Lingzhi WU):Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.*
 
 ...
 
@@ -44,20 +43,18 @@ Comment:Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.
 
 #### Product Specification Scope
 
-1.Spatial Extent：
+1. Spatial Extent：
 
-This product specification applies to the maritime area, described below: The area of applicability is the global maritime areas. 
+This product specification applies to the maritime area, described below: 
+The area of applicability is the global maritime areas. 
 
 East Bounding Longitude: 180° 
-
 West Bounding Longitude: -180° 
-
 North Bounding Latitude: 90° 
-
 South Bounding Latitude: -90°
 
 
-2.Content: 
+2. Content: 
 
 This product specification is a digital form of S-23 “Limits of the Oceans and Seas”, but it stipulates that global geographic sea areas must be designated by a system of unique numerical identifiers only. It specifies the content, structure, and metadata needed for creating the S-130 dataset and for its portrayal within an S-100 system. This product specification includes the content model, the encoding, the feature catalogue, portrayal catalogue, metadata, and implementation guidance for developers.
 
@@ -65,8 +62,8 @@ This product specification is a digital form of S-23 “Limits of the Oceans and
 
 *Description: The overall scope of the Specification*
 
-*Comments: This should include the expected SOURCE(s) of the data. For example: NIPWG publications...a source would be the Coast Pilot/Sailing Directions for S-126 (that way if someone thinks Tide Tables should be here
-instead of with S-104 it will be listed).*
+*Comments: This should include the expected SOURCE(s) of the data. For example: NIPWG publications...a source would be the Coast Pilot/Sailing Directions for S-126 (that way if someone thinks Tide Tables should be here instead of with S-104 it will be listed).*
+
 ---
 
 #### Justification
@@ -141,11 +138,13 @@ external party and to what extent? There should be general guidelines for how to
 
 #### Schedule
 
-Draft (2022), Ed 1.0.0(2023), Ed 2.0.0(2024).
+Before HSSC15 (2023): development S-130 Product Specification Edition 1.0.0 + sample data
+Before end 2023: initial implementation S-130 Product Specification Edition 1.0.0 + initial testing sample data
+Before HSSC16 (2024): development S-130 Product Specification Edition 2.0.0 + S-130 dataset
+Before end 2024: approval S-130 Product Specification Edition 2.0.0 + S-130 dataset
+2025-2026: implementation S-130 Product Specification Edition 2.0.0 + distribution S-130 dataset
 
-Comment:Based on the S-130 product specification developments and timeline approved by S-130PT2.
-
-
+Comment: Based on the S-130 product specification developments and timeline approved by S-130PT2.
 
 ...
 
