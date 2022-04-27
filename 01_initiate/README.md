@@ -33,7 +33,7 @@ The product specification for Polygonal demarcations of global sea areas
 
 This document describes a Product Specification for the polygonal demarcation of global sea areas (PDGSA). It is a vector product specification that is primarily intended for encoding the extent of global sea areas using a system of unique numerical identifiers only. In this way, an authoritative dataset for limits of oceans and seas can be developed for use in contemporary geographic information and navigation systems. Its use is therefore not limited to navigational purposes only, but should also allow easy geospatial analysis by a broader audience. This Product Specification complies with the IHO S-100 Universal Hydrographic Data Model.
 
-*Comment (Lingzhi WU):Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.*
+*Comment (Lingzhi WU): Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.*
 
 ...
 
@@ -48,10 +48,10 @@ This document describes a Product Specification for the polygonal demarcation of
 This product specification applies to the maritime area, described below: 
 The area of applicability is the global maritime areas. 
 
-East Bounding Longitude: 180° 
-West Bounding Longitude: -180° 
-North Bounding Latitude: 90° 
-South Bounding Latitude: -90°
++ East Bounding Longitude: 180° 
++ West Bounding Longitude: -180° 
++ North Bounding Latitude: 90° 
++ South Bounding Latitude: -90°
 
 
 2. Content: 
@@ -138,11 +138,11 @@ external party and to what extent? There should be general guidelines for how to
 
 #### Schedule
 
-Before HSSC15 (2023): development S-130 Product Specification Edition 1.0.0 + sample data
-Before end 2023: initial implementation S-130 Product Specification Edition 1.0.0 + initial testing sample data
-Before HSSC16 (2024): development S-130 Product Specification Edition 2.0.0 + S-130 dataset
-Before end 2024: approval S-130 Product Specification Edition 2.0.0 + S-130 dataset
-2025-2026: implementation S-130 Product Specification Edition 2.0.0 + distribution S-130 dataset
++ Before HSSC15 (2023): development S-130 Product Specification Edition 1.0.0 + sample data
++ Before end 2023: initial implementation S-130 Product Specification Edition 1.0.0 + initial testing sample data
++ Before HSSC16 (2024): development S-130 Product Specification Edition 2.0.0 + S-130 dataset
++ Before end 2024: approval S-130 Product Specification Edition 2.0.0 + S-130 dataset
++ 2025-2026: implementation S-130 Product Specification Edition 2.0.0 + distribution S-130 dataset
 
 Comment: Based on the S-130 product specification developments and timeline approved by S-130PT2.
 
