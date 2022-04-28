@@ -8,6 +8,7 @@ This page contains the collaborative working document for the **Product Specific
 + Sewoong Oh
 + Lingzhi WU
 + Trent PALMER
++ NAKABAYASHI Shigeru
 ---
 
 #### Product Specification number
@@ -56,7 +57,7 @@ The area of applicability is the global maritime areas.
 
 2. Content: 
 
-This product specification is a digital form of S-23 “Limits of the Oceans and Seas”, but it stipulates that global geographic sea areas must be designated by a system of unique numerical identifiers only. It specifies the content, structure, and metadata needed for creating the S-130 dataset and for its portrayal within an S-100 system. This product specification includes the content model, the encoding, the feature catalogue, portrayal catalogue, metadata, and implementation guidance for developers.
+This product specification is for the modernization of standardization of the limits of the oceans and seas, but it stipulates that global geographic sea areas must be designated by a system of unique numerical identifiers only. It specifies the content, structure, and metadata needed for creating the S-130 dataset and for its portrayal within an S-100 system. This product specification includes the content model, the encoding, the feature catalogue, portrayal catalogue, metadata, and implementation guidance for developers.
 
 ...
 
