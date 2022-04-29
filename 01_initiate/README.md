@@ -32,7 +32,7 @@ The product specification for Polygonal demarcations of global sea areas
 
 #### Abstract
 
-This document describes a Product Specification for the polygonal demarcation of global sea areas (PDGSA). It is a vector product specification that is primarily intended for encoding the extent of global sea areas using a system of unique numerical identifiers only. In this way, an authoritative dataset for limits of oceans and seas can be developed for use in contemporary geographic information and navigation systems. Its use is therefore not limited to navigational purposes only, but should also allow easy geospatial analysis by a broader audience. This Product Specification complies with the IHO S-100 Universal Hydrographic Data Model.
+This document describes a product specification for the polygonal demarcation of global sea areas (PDGSA). It is a vector product specification that is primarily intended for encoding the extent of global sea areas using a system of unique numerical identifiers only. In this way, an authoritative dataset for limits of oceans and seas can be developed for use in contemporary geographic information and navigation systems. Its use is therefore not limited to navigational purposes only, but should also allow easy geospatial analysis by a broader audience. This product specification complies with the IHO S-100 Universal Hydrographic Data Model.
 
 *Comment (Lingzhi WU): Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.*
 
@@ -112,6 +112,7 @@ Yes.
 2.S-101PJ: Specific information on feature Sea Area/Named Water Area.
 
 3.DQWG:    Specific information on Data Quality.
+
 
 ...
 
