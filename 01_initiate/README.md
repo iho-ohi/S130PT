@@ -80,7 +80,7 @@ This product specification is for the modernization of standardization of the li
 
 *Comments: This should include the expected SOURCE(s) of the data. For example: NIPWG publications...a source would be the Coast Pilot/Sailing Directions for S-126 (that way if someone thinks Tide Tables should be here instead of with S-104 it will be listed).*
 
-*Comments: In addition to the components of the product specification, the contextual content that can be included in the Application schema should also be described such as numerical idetifier, digital coordinates of limits, type of ocean and sea area, data source, dependency between sea areas, detailed description, additional information for each sea area. 
+*Comments (Sewoong) : In addition to the components of the product specification, the contextual content that can be included in the Application schema should also be described such as numerical idetifier, digital coordinates of limits, type of ocean and sea area, data source, dependency between sea areas, detailed description, additional information for each sea area. 
 
 
 ---
