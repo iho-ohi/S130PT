@@ -11,12 +11,14 @@ This page contains the collaborative working document for the **Product Specific
 + NAKABAYASHI Shigeru
 ---
 
-*Overall Comments (Sewoong) : The following structure is from the Table B-6-1 Product Specification description template of S-97 Part B - Execution, which intends to provide a set of information beforehand to HSSC for consideration. Since we already got approval from HSSC, I'd like to suggest that PT considers the following in terms of initial description for S-130 according to the S-97 Part A - Content (See Page 10, The overview section and its sub-elements) 
+*Overall Comments (Sewoong) : The following structure is from the Table B-6-1 Product Specification description template of S-97 Part B - Execution, which intends to provide a set of information beforehand to HSSC for consideration. Since we already got approval from HSSC, I'd like to suggest that PT considers the following in terms of initial description for S-130 according to the S-97 Part A - Content (From Chapter 1 to Chapter 5 in Product specification, which is Chapter contents before entering the Application schema) 
 
  - Introduction
- - General data product description
- - Data product specification metadata
- - Product specification maintenance
+ - General data product description (Title, Abstract, Content, Spatial Extent, Specific Purpose)
+ - Data product specification metadata (Title, S-100 Viersion, Lang, Contract, Identifier)
+ - Product specification maintenance (New Edition, Revisions, Clarification, Version Numbers)
+ - Specification Scope
+ - Data product identification
 
 ---
 
