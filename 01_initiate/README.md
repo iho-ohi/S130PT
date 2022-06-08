@@ -121,6 +121,8 @@ Yes.
 
 *Comments: S-98 Interoperability Specification in S-100 Navigation Systems*
 
+*Comments (Sewoong) : If S-130 supports the navigational purpose, the S-98 applicability can be yes. But, so far, the S-100 implementation roadmap does not consider the S-130 in both Step 1 and Step 2.
+
 ---
 
 
