@@ -86,6 +86,8 @@ This product specification is for the modernization of standardization of the li
 
 The 3rd Edition of S-23 “Limits of the Oceans and Seas” is not suitable for use in a digital environment. A transformation into a digital dataset named “Polygonal demarcations of global sea areas” would facilitate the joint standardization and service activities of IHO and other adjacent domains to support the e-Navigation concept of the IMO. So it is necessary to make S-23 content fit for digital dissemination through the transformation of information contained in a database of attributed area feature objects with global coverage.
 
+*Comment(Sewoong) : Since PT members agree with the need of S-130, the necessity needs to go to the introduction
+
 ...
 
 *Description: The reason why this Product Specification should be developed*
