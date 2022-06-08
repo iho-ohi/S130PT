@@ -11,7 +11,7 @@ This page contains the collaborative working document for the **Product Specific
 + NAKABAYASHI Shigeru
 ---
 
-*Overall Comments (Sewoong) : The following structure is from the Table B-6-1 Product Specification description template of S-97 Part B - Execution, which intends to provide a set of information beforehand to HSSC for consideration. Since we already got approval from HSSC, I'd like to suggest that PT considers the following in terms of initial description for S-130 according to the S-97 Part A - Content (From Chapter 1 to Chapter 5 in Product specification, which is Chapter contents before entering the Application schema) 
+*Overall Comments (Sewoong) : The following structure is from the Table B-6-1 Product Specification description template of S-97 Part B - Execution, which intends to provide a set of information beforehand to HSSC for consideration. Since we already got approval from HSSC, I'd like to suggest that PT considers the followings in terms of initial description for S-130 according to the S-97 Part A - Content (From Chapter 1 to Chapter 5 in the Product specification, which is Chapter contents before entering the Application schema) 
 
  - Introduction
  - General data product description (Title, Abstract, Content, Spatial Extent, Specific Purpose)
@@ -46,6 +46,8 @@ The product specification for Polygonal demarcations of global sea areas
 This document describes a product specification for the polygonal demarcation of global sea areas (PDGSA). It is a vector product specification that is primarily intended for encoding the extent of global sea areas using a system of unique numerical identifiers only. In this way, an authoritative dataset for limits of oceans and seas can be developed for use in contemporary geographic information and navigation systems. Its use is therefore not limited to navigational purposes only, but should also allow easy geospatial analysis by a broader audience. This product specification complies with the IHO S-100 Universal Hydrographic Data Model.
 
 *Comment (Lingzhi WU): Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.*
+*Comment (Sewoong): I think for S-130 not to consider the navigational purpose. If the S-130 is for navigation, it should follow the Level 5 in the S-100 Readiness Levels of S-97 including the Encryption, Digital Signatures, Interoperability, Alerts and Indications, Validations, Test data sets. It will be too ambitious in our timeline. The portrayal is the most important and technical for navigation purposes, but S-130 datasets should be more emphasised on the use of limits than portrayal
+*Comment (Sewoong): Need to include descriptive texts introduced by Pro 1.9 at A2. 
 
 ...
 
