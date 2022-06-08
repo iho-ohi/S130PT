@@ -11,6 +11,15 @@ This page contains the collaborative working document for the **Product Specific
 + NAKABAYASHI Shigeru
 ---
 
+*Overall Comments (Sewoong) : The following structure is from the Table B-6-1 Product Specification description template of S-97 Part B - Execution, which intends to provide a set of information beforehand to HSSC for consideration. Since we already got approval from HSSC, I'd like to suggest that PT consider the following in terms of initial description for S-130 according to the S-97 Part A - Content (See Page 10, The overview section and its sub-elements) 
+
+ - Introduction
+ - General data product description
+ - Data product specification metadata
+ - Product specification maintenance
+
+---
+
 #### Product Specification number
 
 130
