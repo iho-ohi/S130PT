@@ -48,6 +48,7 @@ This document describes a product specification for the polygonal demarcation of
 *Comment (Lingzhi WU): Based on the S-130 ToRs and Proposal items 1.9.1-1.9.3 of A-2.*
 
 *Comment (Sewoong): I think for S-130 not to consider the navigational purpose. If the S-130 is for navigation, it should follow the Level 5 in the S-100 Readiness Levels of S-97 including the Encryption, Digital Signatures, Interoperability, Alerts and Indications, Validations, Test data sets. It will be too ambitious in our timeline. The portrayal is the most important and technical for navigation purposes, but S-130 datasets should be more emphasised on the use of limits than portrayal
+
 *Comment (Sewoong): Need to include descriptive texts introduced by Pro 1.9 at A2. 
 
 ...
