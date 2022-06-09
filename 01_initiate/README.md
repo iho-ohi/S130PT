@@ -121,7 +121,7 @@ Yes.
 
 *Comments: S-98 Interoperability Specification in S-100 Navigation Systems*
 
-*Comments (Sewoong) : If S-130 supports the navigational purpose, the S-98 applicability can be yes. But, so far, the S-100 implementation roadmap does not consider the S-130 in both Step 1 and Step 2.
+*Comments (Sewoong) : If the S-130 does not consider the navigational purpose, the S-98 applicability will be No.
 
 ---
 
@@ -131,7 +131,7 @@ Yes.
 
 1.S-100WG: Specific information on S-100 Ed5.0.0.
 
-2.S-101PJ: Specific information on feature Sea Area/Named Water Area.
+2.S-101PT: Specific information on feature Sea Area/Named Water Area.
 
 3.DQWG:    Specific information on Data Quality.
 
