@@ -29,8 +29,5 @@ The following conventions are used in the UML diagrams depicting the application
   - No significance attaches to the colour of associations. (Complex diagrams may use different colours to distinguish associations that cross one antoher.)
   - Where the association role or name is not explicitly shown, the default rules for roles and names apply. 
   
- 
-
-
-Polygonal Demarcation of Global Sea Areas products include 
+Polygonal Demarcation of Global Sea Areas products include numerical identifier, version, date range, source indication and additional spatial information which represent the limits of oceans and seas. GlobalSeaArea is the Feature type used to encode the extent of gloabl sea areas using a system of unique numeriacl identifiers. GlobalSeaArea has attributes for numerical identifier identifying global sea area, version to manage change information, maximumDisplayScale and minimumDisplayScale to display global sea area layer, fixedDateRange indicating the effective dates of the feature and sourceIndication to describe origin of source. 
 
