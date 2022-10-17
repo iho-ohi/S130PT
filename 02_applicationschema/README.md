@@ -30,4 +30,7 @@ The following conventions are used in the UML diagrams depicting the application
   - Where the association role or name is not explicitly shown, the default rules for roles and names apply. 
   
 Polygonal Demarcation of Global Sea Areas products include numerical identifier, version, date range, source indication and additional spatial information which represent the limits of oceans and seas. GlobalSeaArea is the Feature type used to encode the extent of gloabl sea areas using a system of unique numeriacl identifiers. GlobalSeaArea has attributes for numerical identifier identifying global sea area, version to manage change information, maximumDisplayScale and minimumDisplayScale to display global sea area layer, fixedDateRange indicating the effective dates of the feature and sourceIndication to describe origin of source. 
-
+Complex attributes fixedDateRange and soucrIndication in the GlobalSeaArea include each detailed attrbute types and is defined as a class seperately. 
+AdditionalSpatialInformation is the Information type to describe additional spatial information which has complex attribute for location by text, LAT/LON by test and reference system. 
+Geographic features use spatial types defined in the geometry package for spatial attributes. 
+The hierarchy of geographic features is designed around the feature association and information association. 
