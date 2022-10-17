@@ -18,4 +18,19 @@ SSG1 Agreed the draft version of Application Schema developed during the meeting
 
 ![image](https://user-images.githubusercontent.com/77085220/189904967-629fbaad-15fa-4afe-b9e9-ab5aa3c94bcf.png)
 
-The explanatory note will be updated. 
+This contains a general overview of the classes and relationships in the S-130 application schema. Detailed information about how to use the feature types and information types to encode PDGSA(Polygonal Demarcation of Global Sea Areas) information is provided in the S-130 Data Classification and Encoding Guide (DCEG).
+
+The following conventions are used in the UML diagrams depicting the application schema:
+  - Standard UML conventions for classes, associations, inheritance, roles, and multiplicities apply, These conventions are described in Part 1 of S-100.
+  - Feature class is depiced with green background.
+  - Inforamtion type class is depiced with blue background.
+  - Complex attributes are depicted with a pink background.
+  - Enumeration list is depicted with a light green background. The numeric code corresponding to each listed value is shown to tis right following an '=' sign.
+  - No significance attaches to the colour of associations. (Complex diagrams may use different colours to distinguish associations that cross one antoher.)
+  - Where the association role or name is not explicitly shown, the default rules for roles and names apply. 
+  
+ 
+
+
+Polygonal Demarcation of Global Sea Areas products include 
+
