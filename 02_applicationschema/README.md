@@ -16,7 +16,7 @@ As action, SSG1 proposed a feature type name with three options to the S-130PT i
 
 SSG1 Agreed the draft version of Application Schema developed during the meeting as a baseline for the Edition 1.0.0 of S-130PS
 
-![image](https://user-images.githubusercontent.com/77085220/224236705-a981d912-9197-4f43-9455-74e815af15e1.png)
+![image](https://user-images.githubusercontent.com/77085220/232312667-2b2824fa-0982-4e53-9907-5ea948e61faf.png)
 
 This contains a general overview of the classes and relationships in the S-130 application schema. Detailed information about how to use the feature types and information types to encode PDGSA(Polygonal Demarcation of Global Sea Areas) information is provided in the S-130 Data Classification and Encoding Guide (DCEG).
 
