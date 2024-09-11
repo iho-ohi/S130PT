@@ -1,1 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<S100FC:S100_FC_FeatureCatalogue xmlns:S100FC="http://www.iho.int/S100FC/5.0" xmlns:S100Base="http://www.iho.int/S100Base/5.0" xmlns:S100CI="http://www.iho.int/S100CI/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:S100CD="http://www.iho.int/S100CD/5.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iho.int/S100FC/5.0 https://schemas.s100dev.net/schemas/S100/5.0.0/S100FC/20220610/S100FC.xsd">
+	<S100FC:name>S-130 Polygonal Demarcations of Global Sea Areas</S100FC:name>
+	<S100FC:scope>global</S100FC:scope>
+	<S100FC:fieldOfApplication>none</S100FC:fieldOfApplication>
+	<S100FC:versionNumber>1.1.0</S100FC:versionNumber>
+	<S100FC:versionDate>2023-12-06</S100FC:versionDate>
+	<S100FC:productId>S-130</S100FC:productId>
+	<S100FC:producer>
+		<S100CI:role>author</S100CI:role>
+		<S100CI:party>
+			<S100CI:CI_Organisation>
+				<S100CI:name>International Hydrographic Organization</S100CI:name>
+				<S100CI:contactInfo>
+					<S100CI:address>
+						<S100CI:city>Monaco</S100CI:city>
+						<S100CI:administrativeArea>4b quai Antonie 1er</S100CI:administrativeArea>
+						<S100CI:country>Monaco</S100CI:country>
+						<S100CI:electronicMailAddress>info@iho.int</S100CI:electronicMailAddress>
+					</S100CI:address>
+					<S100CI:onlineResource>
+						<S100CI:linkage>www.iho.int</S100CI:linkage>
+					</S100CI:onlineResource>
+				</S100CI:contactInfo>
+			</S100CI:CI_Organisation>
+		</S100CI:party>
+	</S100FC:producer>
+	<S100FC:classification>unclassified</S100FC:classification>
+	<S100FC:S100_FC_DefinitionSources>
+		<S100FC:FC_DefinitionSource id="IHOREG">
+			<S100FC:source>
+				<S100CI:title>IHO GI Registry</S100CI:title>
+				<S100CI:onlineResource>
+					<S100CI:linkage>http://registry.iho.int</S100CI:linkage>
+				</S100CI:onlineResource>
+			</S100FC:source>
+		</S100FC:FC_DefinitionSource>
+	</S100FC:S100_FC_DefinitionSources>
+	<S100FC:S100_FC_SimpleAttributes>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Date Start</S100FC:name>
+			<S100FC:definition>The earliest date on which an object (for example a buoy) will be present.</S100FC:definition>
+			<S100FC:code>dateStart</S100FC:code>
+			<S100FC:remarks>The Date Start should be encoded using 4 digits for the calendar year (YYYY), 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, indication of the month and/or day is omitted, and replaced with dashes (-). When no specific year is required (that is, the event or date range ends at the same time each year) the following two cases may be considered:- same day each year: ----MMDD- same month each year: ----MM--This conforms to ISO 8601: 2004. Date Start indicates the earliest date of an event or the start of a date range. It is used to indicate the start of a fixed date range, the start of a periodic date range, or the deployment or implementation of a feature at a specific date in the future.</S100FC:remarks>
+			<S100FC:alias>DATSTA</S100FC:alias>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>792</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>S100_TruncatedDate</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Date End</S100FC:name>
+			<S100FC:definition>The latest date on which an object (for example a buoy) will be present.</S100FC:definition>
+			<S100FC:code>dateEnd</S100FC:code>
+			<S100FC:remarks>The Date End should be encoded using 4 digits for the calendar year (YYYY), 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, indication of the month and/or day is omitted, and replaced with dashes (-). When no specific year is required (that is, the event or date range ends at the same time each year) the following two cases may be considered:- same day each year: ----MMDD- same month each year: ----MM--This conforms to ISO 8601: 2004. Date End indicates the latest date of an event or the end of a date range. It is used to indicate the end of a fixed date range, the end of a periodic date range, or the removal or cancellation of a feature at a specific date in the future.</S100FC:remarks>
+			<S100FC:alias>DATEND</S100FC:alias>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>790</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>S100_TruncatedDate</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Location by Text</S100FC:name>
+			<S100FC:definition>A textual rendering of a geographic location.</S100FC:definition>
+			<S100FC:code>locationByText</S100FC:code>
+			<S100FC:alias>LOCNBT</S100FC:alias>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>545</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>text</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Maximum Display Scale</S100FC:name>
+			<S100FC:definition>The largest intended viewing scale for the data.</S100FC:definition>
+			<S100FC:code>maximumDisplayScale</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>936</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>integer</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Minimum Display Scale</S100FC:name>
+			<S100FC:definition>The smallest intended viewing scale for the data.</S100FC:definition>
+			<S100FC:code>minimumDisplayScale</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>941</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>integer</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Reference System</S100FC:name>
+			<S100FC:definition>A textual rendering of a coordinate reference system (CRS).</S100FC:definition>
+			<S100FC:code>referenceSystem</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>615</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>text</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Reported Date</S100FC:name>
+			<S100FC:definition>The date that the item was observed, done, or investigated.</S100FC:definition>
+			<S100FC:code>reportedDate</S100FC:code>
+			<S100FC:alias>SORDAT</S100FC:alias>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>154</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>S100_TruncatedDate</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Source</S100FC:name>
+			<S100FC:definition>The publication, document, or reference work from which information comes or is acquired.</S100FC:definition>
+			<S100FC:code>source</S100FC:code>
+			<S100FC:remarks>May be populated with the corresponding paper chart Notice to Mariners numbers, although other references are permitted.</S100FC:remarks>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>220</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>text</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Text Latitude</S100FC:name>
+			<S100FC:definition>Textual description of latitude information.</S100FC:definition>
+			<S100FC:code>textLatitude</S100FC:code>
+			<S100FC:valueType>text</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Text Longitude</S100FC:name>
+			<S100FC:definition>Textual description of longitude information.</S100FC:definition>
+			<S100FC:code>textLongitude</S100FC:code>
+			<S100FC:valueType>text</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Version</S100FC:name>
+			<S100FC:definition>Identification of a specific form or variation of an entity.</S100FC:definition>
+			<S100FC:code>version</S100FC:code>
+			<S100FC:valueType>text</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Source Type</S100FC:name>
+			<S100FC:definition>Type of the source.</S100FC:definition>
+			<S100FC:code>sourceType</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>724</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>enumeration</S100FC:valueType>
+			<S100FC:listedValues>
+				<S100FC:listedValue>
+					<S100FC:label>Law or Regulation</S100FC:label>
+					<S100FC:definition>Treaty, convention, or international agreement; law or regulation issued by a national or other authority.</S100FC:definition>
+					<S100FC:code>1</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>2685</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>Official Publication</S100FC:label>
+					<S100FC:definition>Publication not having the force of law, issued by an international organisation or a national or local administration.</S100FC:definition>
+					<S100FC:code>2</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>2686</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>Remotely Sensed Images</S100FC:label>
+					<S100FC:definition>Information obtained from satellite images.</S100FC:definition>
+					<S100FC:code>10</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>2690</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>Products Issued by HO Services</S100FC:label>
+					<S100FC:definition>Information obtained from products issued by Hydrographic Offices.</S100FC:definition>
+					<S100FC:code>12</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>2692</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
+				</S100FC:listedValue>
+			</S100FC:listedValues>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Line Type</S100FC:name>
+			<S100FC:definition>Indication of the nature of the path between two points, associated with a line segment.</S100FC:definition>
+			<S100FC:code>lineType</S100FC:code>
+			<S100FC:valueType>enumeration</S100FC:valueType>
+			<S100FC:listedValues>
+				<S100FC:listedValue>
+					<S100FC:label>Rhumb Line</S100FC:label>
+					<S100FC:definition>A line on the surface of the earth making the same oblique angle with all meridians; a loxodrome spiralling toward the poles in a constant true direction. parallels and meridians, which also maintain constant true directions, may be considered special cases of the rhumb line. A rhumb line is a straight line on a Mercator projection. Sometimes shortened to rhumb</S100FC:definition>
+					<S100FC:code>1</S100FC:code>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>Great Circle</S100FC:label>
+					<S100FC:definition>The intersection of a sphere and a plane through its center. See also Orthodrome</S100FC:definition>
+					<S100FC:code>2</S100FC:code>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>Undetermined/Unknown</S100FC:label>
+					<S100FC:definition>Having an unknown value.</S100FC:definition>
+					<S100FC:code>3</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>1772</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
+				</S100FC:listedValue>
+			</S100FC:listedValues>
+		</S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Feature Identifier</S100FC:name>
+			<S100FC:definition>An identifier referencing an object or feature that is external to the dataset, expressed in Uniform Resource Name (URN) format.</S100FC:definition>
+			<S100FC:code>featureIdentifier</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>485</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:valueType>URN</S100FC:valueType>
+		</S100FC:S100_FC_SimpleAttribute>
+	</S100FC:S100_FC_SimpleAttributes>
+	<S100FC:S100_FC_ComplexAttributes>
+		<S100FC:S100_FC_ComplexAttribute>
+			<S100FC:name>Fixed Date Range</S100FC:name>
+			<S100FC:definition>An active period of a single fixed event or occurrence, as the date range between discrete start and end dates.</S100FC:definition>
+			<S100FC:code>fixedDateRange</S100FC:code>
+			<S100FC:remarks>Dates must be encoded in the format YYYYMMDD; using 4 digits for the calendar year (YYYY) and, optionally, 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, the values are replaced with dashes (-). The date range of a recurring event or occurrence must be encoded using periodicDateRange.</S100FC:remarks>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>798</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="dateStart"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="dateEnd"/>
+			</S100FC:subAttributeBinding>
+		</S100FC:S100_FC_ComplexAttribute>
+		<S100FC:S100_FC_ComplexAttribute>
+			<S100FC:name>Location Reference</S100FC:name>
+			<S100FC:definition>Comprehensive description of a geographic location through textual elements and/or geospatial coordinates.</S100FC:definition>
+			<S100FC:code>locationReference</S100FC:code>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="locationByText"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="textLatitude"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="textLongitude"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="referenceSystem"/>
+			</S100FC:subAttributeBinding>
+		</S100FC:S100_FC_ComplexAttribute>
+		<S100FC:S100_FC_ComplexAttribute>
+			<S100FC:name>Source Indication</S100FC:name>
+			<S100FC:definition>Information about the source document, publication, or reference from which object data or textual material included or referenced in a dataset are derived.</S100FC:definition>
+			<S100FC:code>sourceIndication</S100FC:code>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="reportedDate"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="source"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="sourceType"/>
+			</S100FC:subAttributeBinding>
+		</S100FC:S100_FC_ComplexAttribute>
+	</S100FC:S100_FC_ComplexAttributes>
+	<S100FC:S100_FC_Roles>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>The Additional Spatial Information</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>theAdditionalSpatialInformation</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>The Source</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>theSource</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>The Feature Type</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>theFeatureType</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Zone</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>zone</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Location</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>location</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Limit</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>limit</S100FC:code>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Component Of</S100FC:name>
+			<S100FC:definition>A pointer to the aggregate in a whole-part relationship.</S100FC:definition>
+			<S100FC:code>componentOf</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>9</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Consists Of</S100FC:name>
+			<S100FC:definition>A pointer to a part in a whole-part relationship.</S100FC:definition>
+			<S100FC:code>consistsOf</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>10</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Information Provided For</S100FC:name>
+			<S100FC:definition>A pointer to a specific feature(s) for which further information is required.</S100FC:definition>
+			<S100FC:code>informationProvidedFor</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>16</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+		</S100FC:S100_FC_Role>
+		<S100FC:S100_FC_Role>
+			<S100FC:name>Provides Information</S100FC:name>
+			<S100FC:definition>A pointer to an object that provides more information about the referencing feature or information type.</S100FC:definition>
+			<S100FC:code>providesInformation</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>17</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+		</S100FC:S100_FC_Role>
+	</S100FC:S100_FC_Roles>
+	<S100FC:S100_FC_InformationAssociations>
+		<S100FC:S100_FC_InformationAssociation isAbstract="false">
+			<S100FC:name>Additional Information</S100FC:name>
+			<S100FC:definition>A feature association for the binding between at least one instance of a geo feature and an instance of an information type. </S100FC:definition>
+			<S100FC:code>AdditionalInformation</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>8000001</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:role ref="providesInformation"/>
+			<S100FC:role ref="informationProvidedFor"/>
+		</S100FC:S100_FC_InformationAssociation>
+		<S100FC:S100_FC_InformationAssociation>
+			<S100FC:name>Additional Spatial Information Source</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>AdditionalSpatialInformationSource</S100FC:code>
+			<S100FC:role ref="theSource"/>
+			<S100FC:role ref="theAdditionalSpatialInformation"/>
+		</S100FC:S100_FC_InformationAssociation>
+		<S100FC:S100_FC_InformationAssociation>
+			<S100FC:name>Feature Type Source</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>FeatureTypeSource</S100FC:code>
+			<S100FC:role ref="theFeatureType"/>
+			<S100FC:role ref="theSource"/>
+		</S100FC:S100_FC_InformationAssociation>
+	</S100FC:S100_FC_InformationAssociations>
+	<S100FC:S100_FC_FeatureAssociations>
+		<S100FC:S100_FC_FeatureAssociation isAbstract="false">
+			<S100FC:name>Aggregation</S100FC:name>
+			<S100FC:definition>A parent-child relationship where the child can exist independently of the parent.</S100FC:definition>
+			<S100FC:code>Aggregation</S100FC:code>
+			<S100FC:role ref="consistsOf"/>
+			<S100FC:role ref="componentOf"/>
+		</S100FC:S100_FC_FeatureAssociation>
+		<S100FC:S100_FC_FeatureAssociation>
+			<S100FC:name>Zone Limit</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>ZoneLimit</S100FC:code>
+			<S100FC:role ref="zone"/>
+			<S100FC:role ref="limit"/>
+		</S100FC:S100_FC_FeatureAssociation>
+		<S100FC:S100_FC_FeatureAssociation>
+			<S100FC:name>Limit Location</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>LimitLocation</S100FC:code>
+			<S100FC:role ref="limit"/>
+			<S100FC:role ref="location"/>
+		</S100FC:S100_FC_FeatureAssociation>
+		<S100FC:S100_FC_FeatureAssociation>
+			<S100FC:name>Zone Location</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>ZoneLocation</S100FC:code>
+			<S100FC:role ref="zone"/>
+			<S100FC:role ref="location"/>
+		</S100FC:S100_FC_FeatureAssociation>
+	</S100FC:S100_FC_FeatureAssociations>
+	<S100FC:S100_FC_InformationTypes>
+		<S100FC:S100_FC_InformationType>
+			<S100FC:name>Source Indicator</S100FC:name>
+			<S100FC:definition/>
+			<S100FC:code>SourceIndicator</S100FC:code>
+			<S100FC:attributeBinding>
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="sourceIndication"/>
+			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="AdditionalSpatialInformationSource"/>
+				<S100FC:role ref="theAdditionalSpatialInformation"/>
+				<S100FC:informationType ref="AdditionalSpatialInformation"/>
+			</S100FC:informationBinding>
+		</S100FC:S100_FC_InformationType>
+		<S100FC:S100_FC_InformationType>
+			<S100FC:name>Additional Spatial Information</S100FC:name>
+			<S100FC:definition>Additional textual information relating to a one or more geographic locations.</S100FC:definition>
+			<S100FC:code>AdditionalSpatialInformation</S100FC:code>
+			<S100FC:definitionReference>
+				<S100FC:sourceIdentifier>34</S100FC:sourceIdentifier>
+				<S100FC:definitionSource ref="IHOREG"/>
+			</S100FC:definitionReference>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="locationReference"/>
+			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="AdditionalSpatialInformationSource"/>
+				<S100FC:role ref="theSource"/>
+				<S100FC:informationType ref="SourceIndicator"/>
+			</S100FC:informationBinding>
+		</S100FC:S100_FC_InformationType>
+	</S100FC:S100_FC_InformationTypes>
+	<S100FC:S100_FC_FeatureTypes>
+		<S100FC:S100_FC_FeatureType isAbstract="true">
+			<S100FC:name>Feature Type</S100FC:name>
+			<S100FC:definition>Generalized feature type which carries all the common attributes.</S100FC:definition>
+			<S100FC:code>FeatureType</S100FC:code>
+			<S100FC:attributeBinding>
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="maximumDisplayScale"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding>
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="minimumDisplayScale"/>
+			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="AdditionalInformation"/>
+				<S100FC:role ref="providesInformation"/>
+				<S100FC:informationType ref="AdditionalSpatialInformation"/>
+			</S100FC:informationBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="FeatureTypeSource"/>
+				<S100FC:role ref="theSource"/>
+				<S100FC:informationType ref="SourceIndicator"/>
+			</S100FC:informationBinding>
+			<S100FC:featureUseType>geographic</S100FC:featureUseType>
+			<S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
+		</S100FC:S100_FC_FeatureType>
+		<S100FC:S100_FC_FeatureType isAbstract="false">
+			<S100FC:name>Global Sea Area</S100FC:name>
+			<S100FC:definition>An area describing the extents of global seas and oceans.</S100FC:definition>
+			<S100FC:code>GlobalSeaArea</S100FC:code>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="featureIdentifier"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="version"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="fixedDateRange"/>
+			</S100FC:attributeBinding>
+			<S100FC:superType>FeatureType</S100FC:superType>
+			<S100FC:featureUseType>geographic</S100FC:featureUseType>
+			<S100FC:featureBinding roleType="aggregation">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="Aggregation"/>
+				<S100FC:role ref="consistsOf"/>
+				<S100FC:featureType ref="GlobalSeaArea"/>
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="aggregation">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="Aggregation"/>
+				<S100FC:role ref="componentOf"/>
+				<S100FC:featureType ref="GlobalSeaArea"/>
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="ZoneLimit"/>
+				<S100FC:role ref="limit"/>
+				<S100FC:featureType ref="ConstructionLine"/>
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="ZoneLocation"/>
+				<S100FC:role ref="location"/>
+				<S100FC:featureType ref="ContributingPoint"/>
+			</S100FC:featureBinding>
+			<S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
+			<S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+		</S100FC:S100_FC_FeatureType>
+		<S100FC:S100_FC_FeatureType isAbstract="false">
+			<S100FC:name>Construction Line</S100FC:name>
+			<S100FC:definition>An arc used for constructing Limit or Boundary features typically linking to a Contributing Point.</S100FC:definition>
+			<S100FC:code>ConstructionLine</S100FC:code>
+			<S100FC:attributeBinding>
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:permittedValues>
+					<S100FC:value>1</S100FC:value>
+					<S100FC:value>2</S100FC:value>
+					<S100FC:value>3</S100FC:value>
+				</S100FC:permittedValues>
+				<S100FC:attribute ref="lineType"/>
+			</S100FC:attributeBinding>
+			<S100FC:superType>FeatureType</S100FC:superType>
+			<S100FC:featureUseType>geographic</S100FC:featureUseType>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="ZoneLimit"/>
+				<S100FC:role ref="zone"/>
+				<S100FC:featureType ref="GlobalSeaArea"/>
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="LimitLocation"/>
+				<S100FC:role ref="location"/>
+				<S100FC:featureType ref="ContributingPoint"/>
+			</S100FC:featureBinding>
+			<S100FC:permittedPrimitives>curve</S100FC:permittedPrimitives>
+		</S100FC:S100_FC_FeatureType>
+		<S100FC:S100_FC_FeatureType isAbstract="false">
+			<S100FC:name>Contributing Point</S100FC:name>
+			<S100FC:definition>A point, typically on a Baseline, used for the computation of a maritime Limit or Boundary feature.</S100FC:definition>
+			<S100FC:code>ContributingPoint</S100FC:code>
+			<S100FC:superType>FeatureType</S100FC:superType>
+			<S100FC:featureUseType>geographic</S100FC:featureUseType>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="ZoneLocation"/>
+				<S100FC:role ref="zone"/>
+				<S100FC:featureType ref="GlobalSeaArea"/>
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="LimitLocation"/>
+				<S100FC:role ref="limit"/>
+				<S100FC:featureType ref="ConstructionLine"/>
+			</S100FC:featureBinding>
+			<S100FC:permittedPrimitives>point</S100FC:permittedPrimitives>
+		</S100FC:S100_FC_FeatureType>
+	</S100FC:S100_FC_FeatureTypes>
+</S100FC:S100_FC_FeatureCatalogue>
 
