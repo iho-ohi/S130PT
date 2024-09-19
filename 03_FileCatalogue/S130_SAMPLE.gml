@@ -11,7 +11,7 @@
     <S100:encodingSpecificationEdition>1.1.0</S100:encodingSpecificationEdition>
     <S100:productIdentifier>S-130</S100:productIdentifier>
     <S100:productEdition>1.1</S100:productEdition>
-    <S100:applicationProfile></S100:applicationProfile>
+    <S100:applicationProfile>1</S100:applicationProfile>
     <S100:datasetFileIdentifier>130_SAMPLE</S100:datasetFileIdentifier>
     <S100:datasetTitle>130_SAMPLE</S100:datasetTitle>
     <S100:datasetReferenceDate>2024-04-09</S100:datasetReferenceDate>
@@ -71,7 +71,7 @@
               <gml:PolygonPatch>
                 <gml:exterior>
                   <gml:LinearRing>
-                    <gml:posList>1.100000 1.200000 1.100000 4.200000 4.100000 4.200000 4.100000 1.200000</gml:posList>
+                    <gml:posList>1.100000 1.200000 1.100000 4.200000 4.100000 4.200000 4.100000 1.200000 1.100000 1.200000</gml:posList>
                   </gml:LinearRing>
                 </gml:exterior>
               </gml:PolygonPatch>
