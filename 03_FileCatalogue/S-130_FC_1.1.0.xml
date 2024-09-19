@@ -553,7 +553,7 @@
 			</S100FC:attributeBinding>
 			<S100FC:superType>FeatureType</S100FC:superType>
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
-			<S100FC:featureBinding roleType="aggregation">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true"/>
