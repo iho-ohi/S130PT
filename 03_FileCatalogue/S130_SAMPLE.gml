@@ -71,7 +71,7 @@
               <gml:PolygonPatch>
                 <gml:exterior>
                   <gml:LinearRing>
-                    <gml:posList>1.100000 1.200000 1.100000 4.200000 4.100000 4.200000 4.100000 1.200000 1.100000 1.200000</gml:posList>
+                    <gml:posList>1.100000 1.200000 4.100000 1.200000 4.100000 4.200000 1.100000 4.200000 1.100000 1.200000</gml:posList>
                   </gml:LinearRing>
                 </gml:exterior>
               </gml:PolygonPatch>
