@@ -17,7 +17,7 @@
 		<S100:productIdentifier>S-130</S100:productIdentifier>
 		<S100:productEdition>1.1</S100:productEdition>
 		<S100:applicationProfile>1</S100:applicationProfile>
-		<S100:datasetFileIdentifier>13000AASAMPLEDL_110</S100:datasetFileIdentifier>
+		<S100:datasetFileIdentifier>13000AASAMPLEDL_110.gml</S100:datasetFileIdentifier>
 		<S100:datasetTitle>Sample dataset for S-130 - MultiPolygon features (scenario B)</S100:datasetTitle>
 		<S100:datasetReferenceDate>2024-10-09</S100:datasetReferenceDate>
 		<S100:datasetLanguage>eng</S100:datasetLanguage>
