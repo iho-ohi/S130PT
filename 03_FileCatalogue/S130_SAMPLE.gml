@@ -12,7 +12,7 @@
     <S100:productIdentifier>S-130</S100:productIdentifier>
     <S100:productEdition>1.1</S100:productEdition>
     <S100:applicationProfile>1</S100:applicationProfile>
-    <S100:datasetFileIdentifier>130_SAMPLE</S100:datasetFileIdentifier>
+    <S100:datasetFileIdentifier>130_SAMPLE.gml</S100:datasetFileIdentifier>
     <S100:datasetTitle>130_SAMPLE</S100:datasetTitle>
     <S100:datasetReferenceDate>2024-04-09</S100:datasetReferenceDate>
     <S100:datasetLanguage>eng</S100:datasetLanguage>
