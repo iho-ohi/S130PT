@@ -13,7 +13,7 @@
 	</gml:boundedBy>
 	<S100:DatasetIdentificationInformation>
 		<S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
-		<S100:encodingSpecificationEdition>1.1.0</S100:encodingSpecificationEdition>
+		<S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
 		<S100:productIdentifier>S-130</S100:productIdentifier>
 		<S100:productEdition>1.1</S100:productEdition>
 		<S100:applicationProfile>1</S100:applicationProfile>
