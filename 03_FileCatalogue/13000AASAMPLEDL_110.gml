@@ -52,7 +52,7 @@
 			<S130:consistsOf xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
-					<S100:Surface gml:id="S.0002">
+					<S100:Surface gml:id="S.0001">
 						<gml:patches>
 							<gml:PolygonPatch>
 								<gml:exterior>
@@ -104,7 +104,7 @@
 			<S130:consistsOf xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
-					<S100:Surface gml:id="S.0002">
+					<S100:Surface gml:id="S.0003">
 						<gml:patches>
 							<gml:PolygonPatch>
 								<gml:exterior>
@@ -142,7 +142,7 @@
 			<S130:consistsOf xlink:href="#M.0005" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
-					<S100:Surface gml:id="S.0002">
+					<S100:Surface gml:id="S.0004">
 						<gml:patches>
 							<gml:PolygonPatch>
 								<gml:exterior>
@@ -168,7 +168,7 @@
 			<S130:consistsOf xlink:href="#M.0005" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
-					<S100:Surface gml:id="S.0002">
+					<S100:Surface gml:id="S.0005">
 						<gml:patches>
 							<gml:PolygonPatch>
 								<gml:exterior>
