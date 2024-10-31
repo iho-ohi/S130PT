@@ -36,9 +36,9 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:componentOf xlink:href="#M.0002" xlink:title="Aggregation"/>
-			<S130:componentOf xlink:href="#M.0003" xlink:title="Aggregation"/>
-			<S130:componentOf xlink:href="#M.0004" xlink:title="Aggregation"/>
+			<S130:theCollection xlink:href="#M.0002" xlink:title="Aggregation"/>
+			<S130:theCollection xlink:href="#M.0003" xlink:title="Aggregation"/>
+			<S130:theCollection xlink:href="#M.0004" xlink:title="Aggregation"/>
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0002">
 			<S130:featureIdentifier>urn:mrn:iho:s130:58312041666</S130:featureIdentifier>
@@ -49,7 +49,7 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:consistsOf xlink:href="#M.0001" xlink:title="Aggregation"/>
+			<S130:theComponent xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="S.0001">
@@ -75,7 +75,7 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:consistsOf xlink:href="#M.0001" xlink:title="Aggregation"/>
+			<S130:theComponent xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="S.0002">
@@ -101,7 +101,7 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:consistsOf xlink:href="#M.0001" xlink:title="Aggregation"/>
+			<S130:theComponent xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="S.0003">
@@ -127,8 +127,8 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:componentOf xlink:href="#M.0006" xlink:title="Aggregation"/>
-			<S130:componentOf xlink:href="#M.0007" xlink:title="Aggregation"/>
+			<S130:theCollection xlink:href="#M.0006" xlink:title="Aggregation"/>
+			<S130:theCollection xlink:href="#M.0007" xlink:title="Aggregation"/>
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0006">
 			<S130:featureIdentifier>urn:mrn:iho:s130:69336157000</S130:featureIdentifier>
@@ -139,7 +139,7 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:consistsOf xlink:href="#M.0005" xlink:title="Aggregation"/>
+			<S130:theComponent xlink:href="#M.0005" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="S.0004">
@@ -165,7 +165,7 @@
 				</S130:dateStart>
 			</S130:fixedDateRange>
 			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
-			<S130:consistsOf xlink:href="#M.0005" xlink:title="Aggregation"/>
+			<S130:theComponent xlink:href="#M.0005" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="S.0005">
