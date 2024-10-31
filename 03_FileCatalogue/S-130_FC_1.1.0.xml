@@ -140,7 +140,7 @@
 			<S100FC:name>Version</S100FC:name>
 			<S100FC:definition>Identification of a specific form or variation of an entity.</S100FC:definition>
 			<S100FC:code>version</S100FC:code>
-			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:valueType>integer</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Source Type</S100FC:name>
