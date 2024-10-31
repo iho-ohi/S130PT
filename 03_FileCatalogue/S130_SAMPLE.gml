@@ -49,7 +49,7 @@
   <S130:members>
     <S130:GlobalSeaArea gml:id="M.0001">
       <S130:featureIdentifier>urn:mrn:iho:s130:02600002700</S130:featureIdentifier>
-      <S130:version>string</S130:version>
+      <S130:version>0</S130:version>
       <S130:fixedDateRange>
         <S130:dateStart>
           <S100:date>2023-07-05</S100:date>
