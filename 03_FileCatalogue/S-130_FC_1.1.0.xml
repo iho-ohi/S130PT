@@ -345,22 +345,14 @@
 			<S100FC:code>limit</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
-			<S100FC:name>Component Of</S100FC:name>
+			<S100FC:name>The Collection</S100FC:name>
 			<S100FC:definition>A pointer to the aggregate in a whole-part relationship.</S100FC:definition>
-			<S100FC:code>componentOf</S100FC:code>
-			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9</S100FC:sourceIdentifier>
-				<S100FC:definitionSource ref="IHOREG"/>
-			</S100FC:definitionReference>
+			<S100FC:code>theCollection</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
-			<S100FC:name>Consists Of</S100FC:name>
+			<S100FC:name>The Component</S100FC:name>
 			<S100FC:definition>A pointer to a part in a whole-part relationship.</S100FC:definition>
-			<S100FC:code>consistsOf</S100FC:code>
-			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>10</S100FC:sourceIdentifier>
-				<S100FC:definitionSource ref="IHOREG"/>
-			</S100FC:definitionReference>
+			<S100FC:code>theComponent</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Information Provided For</S100FC:name>
@@ -413,8 +405,8 @@
 			<S100FC:name>Aggregation</S100FC:name>
 			<S100FC:definition>A parent-child relationship where the child can exist independently of the parent.</S100FC:definition>
 			<S100FC:code>Aggregation</S100FC:code>
-			<S100FC:role ref="consistsOf"/>
-			<S100FC:role ref="componentOf"/>
+			<S100FC:role ref="theComponent"/>
+			<S100FC:role ref="theCollection"/>
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation>
 			<S100FC:name>Zone Limit</S100FC:name>
@@ -559,7 +551,7 @@
 					<S100Base:upper xsi:nil="true" infinite="true"/>
 				</S100FC:multiplicity>
 				<S100FC:association ref="Aggregation"/>
-				<S100FC:role ref="consistsOf"/>
+				<S100FC:role ref="theComponent"/>
 				<S100FC:featureType ref="GlobalSeaArea"/>
 			</S100FC:featureBinding>
 			<S100FC:featureBinding roleType="aggregation">
@@ -568,7 +560,7 @@
 					<S100Base:upper xsi:nil="true" infinite="true"/>
 				</S100FC:multiplicity>
 				<S100FC:association ref="Aggregation"/>
-				<S100FC:role ref="componentOf"/>
+				<S100FC:role ref="theCollection"/>
 				<S100FC:featureType ref="GlobalSeaArea"/>
 			</S100FC:featureBinding>
 			<S100FC:featureBinding roleType="association">
