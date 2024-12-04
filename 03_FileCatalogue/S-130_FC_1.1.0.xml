@@ -74,7 +74,7 @@
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Maximum Display Scale</S100FC:name>
-			<S100FC:definition>The largest intended viewing scale for the data.</S100FC:definition>
+			<S100FC:definition>The value considered by the Data Producer to be the maximum (largest) scale at which the data is to be displayed before it can be considered to be “grossly overscaled”.</S100FC:definition>
 			<S100FC:code>maximumDisplayScale</S100FC:code>
 			<S100FC:definitionReference>
 				<S100FC:sourceIdentifier>936</S100FC:sourceIdentifier>
