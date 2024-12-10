@@ -48,6 +48,10 @@
   </S130:imembers>
   <S130:members>
     <S130:GlobalSeaArea gml:id="M.0001">
+      <S130:maximumDisplayScale>7</S130:maximumDisplayScale>
+      <S130:minimumDisplayScale>7</S130:minimumDisplayScale>
+      <S130:theSource xlink:href="#IM.0002" xlink:title="FeatureTypeSource"/>
+      <S130:providesInformation xlink:href="#IM.0001" xlink:title="AdditionalInformation"/>
       <S130:featureIdentifier>urn:mrn:iho:s130:02600002700</S130:featureIdentifier>
       <S130:version>0</S130:version>
       <S130:fixedDateRange>
@@ -58,12 +62,8 @@
           <S100:date>2023-07-05</S100:date>
         </S130:dateEnd>
       </S130:fixedDateRange>
-      <S130:maximumDisplayScale>7</S130:maximumDisplayScale>
-      <S130:minimumDisplayScale>7</S130:minimumDisplayScale>
-      <S130:providesInformation xlink:href="#IM.0001" xlink:title="AdditionalInformation"/>
-      <S130:theSource xlink:href="#IM.0002" xlink:title="FeatureTypeSource"/>
       <S130:limit xlink:href="#M.0002" xlink:title="ZoneLimit"/>
-	  <S130:location xlink:href="#M.0003" xlink:title="ZoneLocation"/>
+      <S130:location xlink:href="#M.0003" xlink:title="ZoneLocation"/>
       <S130:geometry>
         <S100:surfaceProperty>
           <S100:Surface gml:id="S.0001">
@@ -81,13 +81,13 @@
       </S130:geometry>
     </S130:GlobalSeaArea>
     <S130:ConstructionLine gml:id="M.0002">
-	  <S130:lineType code="1">rhumb line</S130:lineType>
       <S130:maximumDisplayScale>7</S130:maximumDisplayScale>
       <S130:minimumDisplayScale>7</S130:minimumDisplayScale>
-	  <S130:providesInformation xlink:href="#IM.0001" xlink:title="AdditionalInformation"/>
       <S130:theSource xlink:href="#IM.0002" xlink:title="FeatureTypeSource"/>
+      <S130:providesInformation xlink:href="#IM.0001" xlink:title="AdditionalInformation"/>
+      <S130:lineType code="1">rhumb line</S130:lineType>
       <S130:zone xlink:href="#M.0001" xlink:title="ZoneLimit"/>
-	  <S130:location xlink:href="#M.0003" xlink:title="LimitLocation"/>
+      <S130:location xlink:href="#M.0003" xlink:title="LimitLocation"/>
       <S130:geometry>
         <S100:curveProperty>
           <S100:Curve gml:id="C.0001">
@@ -103,10 +103,10 @@
     <S130:ContributingPoint gml:id="M.0003">
       <S130:maximumDisplayScale>7</S130:maximumDisplayScale>
       <S130:minimumDisplayScale>7</S130:minimumDisplayScale>
-	  <S130:providesInformation xlink:href="#IM.0001" xlink:title="AdditionalInformation"/>
       <S130:theSource xlink:href="#IM.0002" xlink:title="FeatureTypeSource"/>
+      <S130:providesInformation xlink:href="#IM.0001" xlink:title="AdditionalInformation"/>   
       <S130:zone xlink:href="#M.0001" xlink:title="ZoneLocation"/>
-	  <S130:limit xlink:href="#M.0002" xlink:title="LimitLocation"/>
+      <S130:limit xlink:href="#M.0002" xlink:title="LimitLocation"/>
       <S130:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="P.0001">
