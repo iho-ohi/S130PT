@@ -31,20 +31,20 @@
       </S130:locationReference>
 	  <S130:theSource xlink:href="#IM.0003" xlink:title="AdditionalSpatialInformationSource"/>
     </S130:AdditionalSpatialInformation>
-	<S130:sourceIndicator gml:id="IM.0002">
+	<S130:SourceIndicator gml:id="IM.0002">
       <S130:sourceIndication>
         <S130:reportedDate>2023-07-05</S130:reportedDate>
         <S130:source>string1</S130:source>
         <S130:sourceType code="1">law or regulation</S130:sourceType>
       </S130:sourceIndication>
-	</S130:sourceIndicator>
-	<S130:sourceIndicator gml:id="IM.0003">
+	</S130:SourceIndicator>
+	<S130:SourceIndicator gml:id="IM.0003">
       <S130:sourceIndication>
         <S130:reportedDate>2023-07-05</S130:reportedDate>
         <S130:source>string2</S130:source>
         <S130:sourceType code="2">official publication</S130:sourceType>
       </S130:sourceIndication>
-	</S130:sourceIndicator>
+	</S130:SourceIndicator>
   </S130:imembers>
   <S130:members>
     <S130:GlobalSeaArea gml:id="M.0001">
