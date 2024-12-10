@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <S130:Dataset
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:S100="http://www.iho.int/s100gml/5.1"
+	xmlns:S100="http://www.iho.int/s100gml/5.0"
 	xmlns:gml="http://www.opengis.net/gml/3.2"
 	xmlns:S130="http://www.iho.int/S130/1.1"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="S130" xsi:schemaLocation="http://www.iho.int/S130/1.1 S130.xsd">
