@@ -28,6 +28,7 @@
 	</S100:DatasetIdentificationInformation>
 	<S130:members>
 		<S130:GlobalSeaArea gml:id="M.0001">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:58312041666</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -35,12 +36,12 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theCollection xlink:href="#M.0002" xlink:title="Aggregation"/>
 			<S130:theCollection xlink:href="#M.0003" xlink:title="Aggregation"/>
 			<S130:theCollection xlink:href="#M.0004" xlink:title="Aggregation"/>
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0002">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:58312041666</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -48,7 +49,6 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theComponent xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
@@ -67,6 +67,7 @@
 			</S130:geometry>			
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0003">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:58312041666</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -74,7 +75,6 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theComponent xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
@@ -93,6 +93,7 @@
 			</S130:geometry>			
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0004">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:58312041666</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -100,7 +101,6 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theComponent xlink:href="#M.0001" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
@@ -119,6 +119,7 @@
 			</S130:geometry>			
 		</S130:GlobalSeaArea>		
 		<S130:GlobalSeaArea gml:id="M.0005">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:69336157000</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -126,11 +127,11 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theCollection xlink:href="#M.0006" xlink:title="Aggregation"/>
 			<S130:theCollection xlink:href="#M.0007" xlink:title="Aggregation"/>
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0006">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:69336157000</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -138,7 +139,6 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theComponent xlink:href="#M.0005" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
@@ -157,6 +157,7 @@
 			</S130:geometry>	
 		</S130:GlobalSeaArea>
 		<S130:GlobalSeaArea gml:id="M.0007">
+			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:featureIdentifier>urn:mrn:iho:s130:69336157000</S130:featureIdentifier>
 			<S130:version>1</S130:version>
 			<S130:fixedDateRange>
@@ -164,7 +165,6 @@
 					<S100:date>2024-10-09</S100:date>
 				</S130:dateStart>
 			</S130:fixedDateRange>
-			<S130:maximumDisplayScale>100000</S130:maximumDisplayScale>
 			<S130:theComponent xlink:href="#M.0005" xlink:title="Aggregation"/>
 			<S130:geometry>
 				<S100:surfaceProperty>
