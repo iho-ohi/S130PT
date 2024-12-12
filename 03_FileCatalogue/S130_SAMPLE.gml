@@ -33,14 +33,14 @@
     </S130:AdditionalSpatialInformation>
 	<S130:SourceIndicator gml:id="IM.0002">
       <S130:sourceIndication>
-        <S130:reportedDate>2023-07-05</S130:reportedDate>
+        <S130:reportedDate><S100:date>2023-07-05</S100:date></S130:reportedDate>
         <S130:source>string1</S130:source>
         <S130:sourceType code="1">law or regulation</S130:sourceType>
       </S130:sourceIndication>
 	</S130:SourceIndicator>
 	<S130:SourceIndicator gml:id="IM.0003">
       <S130:sourceIndication>
-        <S130:reportedDate>2023-07-05</S130:reportedDate>
+        <S130:reportedDate><S100:date>2023-07-05</S100:date></S130:reportedDate>
         <S130:source>string2</S130:source>
         <S130:sourceType code="2">official publication</S130:sourceType>
       </S130:sourceIndication>
