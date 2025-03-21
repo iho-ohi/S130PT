@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.iho.int/S130/2.0"
+           xmlns:S100="http://www.iho.int/s100gml/5.0"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.iho.int/S130/2.0"
+           elementFormDefault="qualified"
+           version="2.0.0-20250320">
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+              schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/S100_gmlProfile.xsd"/>
+   <xs:import namespace="http://www.iho.int/s100gml/5.0"
+              schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/s100gmlbase.xsd"/>
+   <!--    =============================================================================================
+    Copyright, license, and disclaimer
+    © Copyright 2025 International Hydrographic Organization (IHO)
+    
+    License
+    Certain parts of this document refer to or are based on the standards, documents, schemas, or other material
+    of the International Organization for Standardization (ISO), Open Geospatial Consortium (OGC), International
+    Hydrographic Organization / Organisation Hydrographique Internationale (IHO/OHI).
+    The ISO material can be obtained from any ISO member and from the Web site of the ISO Central Secretariat
+    at www.iso.org.
+    The OGC material can be obtained from the OGC Web site at www.opengeospatial.org.
+    The IHO material can be obtained from the IHO Web site at www.iho.int or from the International Hydrographic
+    Organization Secretariat.
+    
+    Permission to copy and distribute this document is hereby granted provided that this notice is retained
+    on all copies, and that IHO & the contributors are credited when the material is redistributed or used in
+    part or whole in derivative works.
+    Redistributions in binary form must reproduce this notice in the documentation and/or other materials
+    provided with the distribution.
+    
+    Disclaimer
+    This work is provided by the copyright holders and contributors "as is" and any express or implied warranties,
+    including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose
+    are disclaimed. In no event shall the copyright owner or contributors be liable for any direct, indirect,
+    incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute
+    goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of
+    liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way
+    out of the use of this software, even if advised of the possibility of such damage.
+    ============================================================================================= -->
+   <!-- XML FC file name 130_2_0_0_FC.XML -->
+   <!-- name: Polygonal Demarcation of Global Sea Areas -->
+   <!-- scope: Ocean, Coastal, Ports and Harbors. Excludes Inland waters. -->
+   <!-- versionNumber: 2.0.0 -->
+   <!-- versionDate: 2025-03-20 -->
+   <!-- productId: S-130 -->
+   <!-- producer: pointOfContact International Hydrographic Organization 4b quai Antoine 1er Monaco info@iho.int https://iho.int/ KRISO (Dr. Sewoong OH) Raphael Malyankar -->
+   <!-- S100_FC_DefinitionSources: IHO GI Registry http://registry.iho.int -->
+   <!-- Schema generated 2025-03-20T20:38:49-07:00 by Raphael Malyankar from catalogue file 130_2_0_0_FC.XML -->
+   <xs:simpleType name="codelistTypeType">
+      <xs:annotation>
+         <xs:documentation>An S-100 codelist.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="openEnumeration">
+            <xs:annotation>
+               <xs:documentation>Open enumeration</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="openDictionary">
+            <xs:annotation>
+               <xs:documentation>Open dictionary</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="closedDictionary">
+            <xs:annotation>
+               <xs:documentation>Closed Dictionary</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="referenceSystemType">
+      <xs:annotation>
+         <xs:documentation>A textual rendering of a coordinate reference system (CRS).</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="textLongitudeType">
+      <xs:annotation>
+         <xs:documentation>Textual description of longitude information.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="textLatitudeType">
+      <xs:annotation>
+         <xs:documentation>Textual description of latitude information.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="locationByTextType">
+      <xs:annotation>
+         <xs:documentation>A textual rendering of a geographic location.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="featureIdentifierType">
+      <xs:annotation>
+         <xs:documentation>An identifier referencing an object or feature that is external to the dataset, expressed in Uniform Resource Name (URN) format.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:anyURI"/>
+   </xs:simpleType>
+   <xs:complexType name="reportedDateType">
+      <xs:annotation>
+         <xs:documentation>The date that the item was observed, done, or investigated.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:S100_TruncatedDate"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="versionType">
+      <xs:annotation>
+         <xs:documentation>Identification of a specific form or variation of an entity.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:minInclusive value="1"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="lineTypeType">
+      <xs:annotation>
+         <xs:documentation>Indication of the nature of the path between two points, associated with a line segment.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="lineTypeLabel">
+            <xs:attribute name="code" type="lineTypeCode" use="required"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:simpleType name="lineTypeLabel">
+      <xs:annotation>
+         <xs:documentation>Indication of the nature of the path between two points, associated with a line segment.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Rhumb Line">
+            <xs:annotation>
+               <xs:documentation>1: A line on the surface of the earth making the same oblique angle with all meridians; a loxodrome spiralling toward the poles in a constant true direction. parallels and meridians, which also maintain constant true directions, may be considered special cases of the rhumb line. A rhumb line is a straight line on a Mercator projection. Sometimes shortened to rhumb.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Great Circle">
+            <xs:annotation>
+               <xs:documentation>2: The intersection of a sphere and a plane through its center. See also Orthodrome.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Undetermined/Unknown">
+            <xs:annotation>
+               <xs:documentation>3: Having an unknown value.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="lineTypeCode">
+      <xs:annotation>
+         <xs:documentation>Indication of the nature of the path between two points, associated with a line segment.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:enumeration value="1">
+            <xs:annotation>
+               <xs:documentation>A line on the surface of the earth making the same oblique angle with all meridians; a loxodrome spiralling toward the poles in a constant true direction. parallels and meridians, which also maintain constant true directions, may be considered special cases of the rhumb line. A rhumb line is a straight line on a Mercator projection. Sometimes shortened to rhumb.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2">
+            <xs:annotation>
+               <xs:documentation>The intersection of a sphere and a plane through its center. See also Orthodrome.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="3">
+            <xs:annotation>
+               <xs:documentation>Having an unknown value.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="ConstructionLine_lineTypeType">
+      <xs:annotation>
+         <xs:documentation>Restricted values of lineType in ConstructionLine</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="ConstructionLine_lineTypeLabel">
+            <xs:attribute name="code" type="ConstructionLine_lineTypeCode" use="required"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:simpleType name="ConstructionLine_lineTypeLabel">
+      <xs:annotation>
+         <xs:documentation>Custom enum: ConstructionLine/lineType</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Rhumb Line"/>
+         <xs:enumeration value="Great Circle"/>
+         <xs:enumeration value="Undetermined/Unknown"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ConstructionLine_lineTypeCode">
+      <xs:annotation>
+         <xs:documentation>Custom enum: ConstructionLine/lineType</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:enumeration value="1">
+            <xs:annotation>
+               <xs:documentation>A line on the surface of the earth making the same oblique angle with all meridians; a loxodrome spiralling toward the poles in a constant true direction. parallels and meridians, which also maintain constant true directions, may be considered special cases of the rhumb line. A rhumb line is a straight line on a Mercator projection. Sometimes shortened to rhumb.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2">
+            <xs:annotation>
+               <xs:documentation>The intersection of a sphere and a plane through its center. See also Orthodrome.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="3">
+            <xs:annotation>
+               <xs:documentation>Having an unknown value.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="minimumDisplayScaleType">
+      <xs:annotation>
+         <xs:documentation>The smallest intended viewing scale for the data.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:minInclusive value="1"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="maximumDisplayScaleType">
+      <xs:annotation>
+         <xs:documentation>The value considered by the Data Producer to be the maximum (largest) scale at which the data is to be displayed before it can be considered to be “grossly overscaled”.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:minInclusive value="1"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="dateEndType">
+      <xs:annotation>
+         <xs:documentation>The latest date on which an object (for example a buoy) will be present.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:S100_TruncatedDate"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="dateStartType">
+      <xs:annotation>
+         <xs:documentation>The earliest date on which an object (for example a buoy) will be present.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:S100_TruncatedDate"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="sourceType">
+      <xs:annotation>
+         <xs:documentation>The publication, document, or reference work from which information comes or is acquired.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:complexType name="sourceTypeType">
+      <xs:annotation>
+         <xs:documentation>Type of the source.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="sourceTypeLabel">
+            <xs:attribute name="code" type="sourceTypeCode" use="required"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:simpleType name="sourceTypeLabel">
+      <xs:annotation>
+         <xs:documentation>Type of the source.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Law or Regulation">
+            <xs:annotation>
+               <xs:documentation>1: Treaty, convention, or international agreement; law or regulation issued by a national or other authority.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Official Publication">
+            <xs:annotation>
+               <xs:documentation>2: Publication not having the force of law, issued by an international organisation or a national or local administration.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Remotely Sensed Images">
+            <xs:annotation>
+               <xs:documentation>10: Information obtained from satellite images.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Products Issued by HO Services">
+            <xs:annotation>
+               <xs:documentation>12: Information obtained from products issued by Hydrographic Offices.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="sourceTypeCode">
+      <xs:annotation>
+         <xs:documentation>Type of the source.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:enumeration value="1">
+            <xs:annotation>
+               <xs:documentation>Treaty, convention, or international agreement; law or regulation issued by a national or other authority.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2">
+            <xs:annotation>
+               <xs:documentation>Publication not having the force of law, issued by an international organisation or a national or local administration.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="10">
+            <xs:annotation>
+               <xs:documentation>Information obtained from satellite images.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="12">
+            <xs:annotation>
+               <xs:documentation>Information obtained from products issued by Hydrographic Offices.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="sourceIndication_sourceTypeType">
+      <xs:annotation>
+         <xs:documentation>Restricted values of sourceType in sourceIndication</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="sourceIndication_sourceTypeLabel">
+            <xs:attribute name="code" type="sourceIndication_sourceTypeCode" use="required"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:simpleType name="sourceIndication_sourceTypeLabel">
+      <xs:annotation>
+         <xs:documentation>Restricted values of sourceIndication/sourceType</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Law or Regulation"/>
+         <xs:enumeration value="Official Publication"/>
+         <xs:enumeration value="Remotely Sensed Images"/>
+         <xs:enumeration value="Products Issued by HO Services"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="sourceIndication_sourceTypeCode">
+      <xs:annotation>
+         <xs:documentation>Restricted values of sourceIndication/sourceType</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:enumeration value="1">
+            <xs:annotation>
+               <xs:documentation>Treaty, convention, or international agreement; law or regulation issued by a national or other authority.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2">
+            <xs:annotation>
+               <xs:documentation>Publication not having the force of law, issued by an international organisation or a national or local administration.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="10">
+            <xs:annotation>
+               <xs:documentation>Information obtained from satellite images.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="12">
+            <xs:annotation>
+               <xs:documentation>Information obtained from products issued by Hydrographic Offices.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="fixedDateRangeType">
+      <xs:annotation>
+         <xs:documentation>An active period of a single fixed event or occurrence, as the date range between discrete
+            start and end dates.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="dateStart" type="dateStartType" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="dateEnd" type="dateEndType" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="locationReferenceType">
+      <xs:annotation>
+         <xs:documentation>Comprehensive description of a geographic location through textual elements and/or geospatial coordinates.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="locationByText" type="locationByTextType" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="textLatitude" type="textLatitudeType" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="textLongitude" type="textLongitudeType" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="referenceSystem" type="referenceSystemType" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="sourceIndicationType">
+      <xs:annotation>
+         <xs:documentation>Information about the source document, publication, or reference from which object data or textual material included or referenced in a dataset are derived.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="reportedDate" type="reportedDateType" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="source" type="sourceType" minOccurs="1" maxOccurs="1" nillable="true"/>
+         <xs:element name="sourceType" type="sourceIndication_sourceTypeType" minOccurs="1" maxOccurs="1" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SourceInformationType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>Information about source material(s) from which data can be derived</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="sourceIndication" type="sourceIndicationType" minOccurs="1" maxOccurs="unbounded"/>
+               <xs:element name="theAdditionalSpatialInformation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>AdditionalSpatialInformation</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="AdditionalSpatialInformationType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>Additional textual information relating to a one or more geographic
+            locations.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="locationReference" type="locationReferenceType" minOccurs="1" maxOccurs="unbounded"/>
+               <xs:element name="theSpatialInformationSource" type="gml:ReferenceType" minOccurs="0"
+                  maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>SourceInformation</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="FeatureTypeType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>Generalized feature type which carries all the common attributes.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="maximumDisplayScale" type="maximumDisplayScaleType" minOccurs="0" maxOccurs="1"/>
+               <xs:element name="minimumDisplayScale" type="minimumDisplayScaleType" minOccurs="0" maxOccurs="1"/>
+               <xs:element name="theInformation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>AdditionalSpatialInformation</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="theFeatureDataSource" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>SourceInformation</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GlobalSeaAreaType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>An area describing the extents of global seas and oceans.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="FeatureTypeType">
+            <xs:sequence>
+               <xs:element name="featureIdentifier" type="featureIdentifierType" minOccurs="1" maxOccurs="1" nillable="true"/>
+               <xs:element name="version" type="versionType" minOccurs="0" maxOccurs="1"/>
+               <xs:element name="fixedDateRange" type="fixedDateRangeType" minOccurs="0" maxOccurs="1"/>
+               <xs:element name="theComponent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>GlobalSeaArea</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="theCollection" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>GlobalSeaArea</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="zoneConstructionLimit" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>ConstructionLine</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="zoneContributingLocation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>ContributingPoint</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometry" maxOccurs="unbounded" minOccurs="0">
+                  <xs:complexType>
+                     <xs:choice>
+                        <xs:element ref="S100:surfaceProperty"/>
+                     </xs:choice>
+                  </xs:complexType>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="ConstructionLineType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>An arc used for constructing Limit or Boundary features typically linking to a Contributing Point.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="FeatureTypeType">
+            <xs:sequence>
+               <xs:element name="lineType" type="ConstructionLine_lineTypeType" minOccurs="1" maxOccurs="1" nillable="true"/>
+               <xs:element name="lineDerivedZone" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>GlobalSeaArea</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="lineContributingLocation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>ContributingPoint</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometry" maxOccurs="unbounded">
+                  <xs:complexType>
+                     <xs:choice>
+                        <xs:element ref="S100:curveProperty"/>
+                     </xs:choice>
+                  </xs:complexType>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="ContributingPointType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>A point, typically on a Baseline, used for the computation of a maritime Limit or Boundary
+            feature.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="FeatureTypeType">
+            <xs:sequence>
+               <xs:element name="pointDerivedZone" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>GlobalSeaArea</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="contributedLimit" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation>ConstructionLine</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometry" maxOccurs="unbounded">
+                  <xs:complexType>
+                     <xs:choice>
+                        <xs:element ref="S100:pointProperty"/>
+                     </xs:choice>
+                  </xs:complexType>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="DataCoverageType" abstract="false">
+      <xs:annotation>
+         <xs:documentation>A geographical area that describes the coverage and extent of spatial
+            objects.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="S100:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="maximumDisplayScale" type="maximumDisplayScaleType" minOccurs="1" maxOccurs="1"
+                  nillable="true"/>
+               <xs:element name="minimumDisplayScale" type="minimumDisplayScaleType" minOccurs="1" maxOccurs="1"
+                  nillable="true"/>
+               <xs:element name="geometry" maxOccurs="unbounded">
+                  <xs:complexType>
+                     <xs:choice>
+                        <xs:element ref="S100:surfaceProperty"/>
+                     </xs:choice>
+                  </xs:complexType>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:element name="SourceInformation" type="SourceInformationType"/>
+   <xs:element name="AdditionalSpatialInformation" type="AdditionalSpatialInformationType"/>
+   <xs:element name="GlobalSeaArea" type="GlobalSeaAreaType"/>
+   <xs:element name="ConstructionLine" type="ConstructionLineType"/>
+   <xs:element name="ContributingPoint" type="ContributingPointType"/>
+   <xs:element name="DataCoverage" type="DataCoverageType"/>
+   <xs:group name="MemberObjects">
+      <xs:annotation>
+         <xs:documentation>group of informtion, feature and meta objects, all GML members</xs:documentation>
+      </xs:annotation>
+      <xs:choice>
+         <xs:element ref="SourceInformation"/>
+         <xs:element ref="AdditionalSpatialInformation"/>
+         <xs:element ref="GlobalSeaArea"/>
+         <xs:element ref="ConstructionLine"/>
+         <xs:element ref="ContributingPoint"/>
+         <xs:element ref="DataCoverage"/>
+      </xs:choice>
+   </xs:group>
+   <xs:complexType name="ThisDatasetType">
+      <xs:complexContent>
+         <xs:extension base="S100:DatasetType">
+            <xs:sequence>
+               <xs:element name="members">
+                  <xs:complexType>
+                     <xs:complexContent>
+                        <xs:extension base="gml:AbstractFeatureMemberType">
+                           <xs:sequence>
+                              <xs:group ref="MemberObjects" minOccurs="0" maxOccurs="unbounded"/>
+                           </xs:sequence>
+                        </xs:extension>
+                     </xs:complexContent>
+                  </xs:complexType>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:element name="Dataset" type="ThisDatasetType"/>
+</xs:schema>
